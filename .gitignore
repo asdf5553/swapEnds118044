@@ -1,6 +1,9 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+public int[] swapEnds(int[] nums) {
+  int f;
+  int l;
+  f = nums[0];
+  l = nums[nums.length - 1];
+  nums[nums.length - 1] = f;
+  nums[0]=l;
+  return nums;
+}
